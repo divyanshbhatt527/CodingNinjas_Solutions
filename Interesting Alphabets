@@ -1,0 +1,60 @@
+Print the following pattern for the given number of rows.
+
+Pattern for N = 5
+
+E
+DE
+CDE
+BCDE
+ABCDE
+
+Input format :
+N (Total no. of rows)
+
+Output format :
+Pattern in N lines
+
+Constraints
+0 <= N <= 26
+
+Sample Input 1:
+8
+
+Sample Output 1:
+
+H
+GH
+FGH
+EFGH
+DEFGH
+CDEFGH
+BCDEFGH
+ABCDEFGH
+
+Sample Input 2:
+7
+
+Sample Output 2:
+
+G
+FG
+EFG
+DEFG
+CDEFG
+BCDEFG
+ABCDEFG
+
+---------Code Solution---------
+
+n=int(input())
+i=1
+while i<=n:
+    j=(n-i+1)
+    count=1
+    while count<=i:
+        charT=chr(ord('A')+j-1)
+        print(charT,end='')
+        j=j+1
+        count+=1
+    print()
+    i=i+1
