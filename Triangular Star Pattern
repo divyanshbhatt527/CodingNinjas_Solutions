@@ -39,7 +39,7 @@ Sample Output 2:
 *****
 ******
 
-Code Solution :-
+--------------Code Solution-------------- 
 
 n=int(input())
 i=1
